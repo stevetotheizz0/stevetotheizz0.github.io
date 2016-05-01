@@ -3,26 +3,25 @@ body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.img-circle {
-  margin-top: 20px;
-}
-
-.team-member {
-  margin-top: 30px;
-  margin-left: 50px;
-  margin-bottom: 75px;
-}
 
 #bio{
   margin-top: 20px;
 }
 
-#map {
+.intro_map {
   height: 325px;
 }
 
 #bs-example-navbar-collapse-1{
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-light-gray {
+  background-color: #f7f7f7;
+}
+
+.img-circle {
+  margin-top: 20px;
 }
 
 .navbar-default {
@@ -77,6 +76,13 @@ body {
   color: white;
   background-color: #fec503;
 }
+
+.team-member {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 75px;
+}
+
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
