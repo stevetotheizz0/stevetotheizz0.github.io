@@ -2,17 +2,6 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-header {
-  background-repeat: none;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  text-align: center;
-  color: white;
-}
 
 .img-circle {
   margin-top: 20px;
@@ -29,7 +18,11 @@ header {
 }
 
 #map {
-  height: 250px;
+  height: 325px;
+}
+
+#bs-example-navbar-collapse-1{
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-default {
@@ -49,7 +42,7 @@ header {
 }
 .navbar-default .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 1);
 }
 .navbar-default .navbar-toggle {
   background-color: #fed136;
@@ -108,12 +101,4 @@ header {
   }
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
-  }
-
-
-  @media (min-width: 768px) {
-    header .intro-text {
-      padding-top: 300px;
-      padding-bottom: 200px;
-    }
   }
