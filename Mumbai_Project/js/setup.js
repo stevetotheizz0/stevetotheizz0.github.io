@@ -1,4 +1,4 @@
-var dataset = "https://raw.githubusercontent.com/stevetotheizz0/stevetotheizz0.github.io/master/Mumbai_Project/Mumba_Study_Area";
+var dataset = "https://raw.githubusercontent.com/stevetotheizz0/stevetotheizz0.github.io/master/Mumbai_Project/Mumba_Study_Area.json";
 
 var map = L.map('map', {
   center: [18.950638, 72.837817],
@@ -13,11 +13,9 @@ var Stamen_TonerLite = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{
   ext: 'png'
 }).addTo(map);
 
-var getAndParseData = function() {
   $(document).ready(function() {
     $.ajax(dataset).done(function(data) {
       parsedData = JSON.parse(data);
       myFeatureGroup = L.geoJson(parsedData).addTo(map);
     });
   });
-};
