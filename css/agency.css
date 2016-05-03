@@ -3,17 +3,28 @@ body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+footer {
+  padding-top: 25px;
+  padding-right: 0px;
+  padding-bottom: 25px;
+  padding-left: 0px
+  text-align: center;
+  background-color: #222222;
+  color: white;
+  position: relative;
+  z-index: 9999;
+}
 
 #bio{
   margin-top: 20px;
 }
 
-.intro_map {
-  height: 325px;
+#contact{
+  padding-bottom: 125px;
 }
 
-#bs-example-navbar-collapse-1{
-  background-color: rgba(0, 0, 0, 0.5);
+.intro_map {
+  height: 325px;
 }
 
 .bg-light-gray {
@@ -41,7 +52,7 @@ body {
 }
 .navbar-default .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #222222;
 }
 .navbar-default .navbar-toggle {
   background-color: #fed136;
@@ -84,6 +95,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .content-section {
+    padding-top: 200px;
+  }
   .navbar-default {
     background-color: transparent;
     padding: 25px 0;
@@ -108,3 +122,28 @@ body {
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
+}
+
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: blue;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #fed136;
+}
