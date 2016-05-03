@@ -2,6 +2,7 @@ var dataset = "https://raw.githubusercontent.com/stevetotheizz0/stevetotheizz0.g
 
 var map = L.map('map', {
   center: [18.950638, 72.837817],
+  zoomControl:false,
   zoom: 12
 });
 

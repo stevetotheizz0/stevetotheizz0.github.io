@@ -1,0 +1,10 @@
+body {
+  padding-top: 100px;
+}
+
+.map{
+  height: 550px;
+  top: 50;
+  right: 50px;
+  position: fixed;
+}

@@ -1,7 +1,8 @@
 var map = L.map('map', {
   center: [40.715150, -73.987961],
   zoom: 13,
-  zoomControl:false
+  zoomControl:false,
+  scrollWheelZoom: false,
 });
 
 var Stamen_TonerLite = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
@@ -18,4 +19,4 @@ var layerUrl = 'https://stephenjskilton.cartodb.com/api/v2/viz/c948b850-ef27-11e
 
 
 
-cartodb.createLayer(map, layerUrl,  { legends: false, cartodb_logo: false}).addTo(map);
+cartodb.createLayer(map, layerUrl,  { legends: false, cartodb_logo: false,}).addTo(map);
