@@ -24,7 +24,9 @@ var locations = function(){
   map.removeLayer(currentLayer);
   var geojsonMarkerOptions = function(feature) {
         switch (feature.properties.Digital) {
-          case 'no': return {fillColor: "#000000", radius:1, fillOpacity: 1, stroke:false};
+          case 'NO': return {fillColor: "#000000", radius:2, fillOpacity: 1, stroke:false};
+          case ' no': return {fillColor: "#000000", radius:2, fillOpacity: 1, stroke:false};
+          case 'no': return {fillColor: "#000000", radius:2, fillOpacity: 1, stroke:false};
           case 'yes':   return {fillColor: "#b2182b", radius:4, fillOpacity: 1, stroke:false};
         }
       };
@@ -52,12 +54,11 @@ var traffic = function(){
 var buildings = function(){
   map.removeLayer(currentLayer);
   var geojsonMarkerOptions = function(feature) {
-        switch (feature.properties.building) {
-          case 'Building':                  return {fillColor: "#A80000", radius:5, fillOpacity: 1, stroke:false};
-          case 'Building, Near Match':      return {fillColor: "#FFA77F", radius:3, fillOpacity: 1, stroke:false};
-          case 'No Building':               return {color: "#000000", radius:3, fillOpacity: 0, stroke:true, weight: 1, opacity: 1};
-          case 'No Building, Near Match':   return {color: "#000000", radius:2, fillOpacity: 0, stroke:true, weight: 1, opacity:1};
-          case 'Unmatched':                 return {fillColor: "#828282", radius:2, fillOpacity: 1, stroke: false};
+        switch (feature.properties.MktAnalysi) {
+          case 'Legal Conforming':                      return {fillColor: "#FED976", radius:4, fillOpacity: 1, stroke:true, weight: 1, opacity:1,color: "#000000"};
+          case 'Legal Conforming (From a Cluster)':     return {fillColor: "#800026", radius:4, fillOpacity: 1, stroke:true, weight: 1, opacity:1,color: "#000000"};
+          case 'Within 300 ft of Another Billboard':    return {fill: false, radius:2, stroke:true, weight: 1, opacity:1, color: "#000000"};
+          case 'Weak':                                  return {fillColor: "#0070FF", radius:2, fillOpacity: 1, stroke:true, weight: 1, opacity: 1,color: "#000000"};
         }
       };
   billboards = L.geoJson(rawBillboard, {

@@ -1,6 +1,6 @@
 var billboards;
     philaBounds = "http://data.phl.opendata.arcgis.com/datasets/405ec3da942d4e20869d4e1449a2be48_0.geojson";
-    dataset ="https://raw.githubusercontent.com/stevetotheizz0/stevetotheizz0.github.io/master/Billboard_Project/json/billboardData.json";
+    dataset ="https://raw.githubusercontent.com/stevetotheizz0/stevetotheizz0.github.io/master/Billboard_Project/json/billboardData1.json";
     parks = "Billboard_Project/json/PhiladelphiaParks.geojson";
     boundaryStyle = {
     "color": "#252525",
@@ -32,8 +32,10 @@ var currentLayer;
 
 var geojsonMarkerOptions = function(feature) {
       switch (feature.properties.Digital) {
-          case 'no': return {fillColor: "#000000", radius:2, fillOpacity: 1, stroke:false};
-          case 'yes':   return {fillColor: "#b2182b", radius:4, fillOpacity: 1, stroke:false};
+        case 'NO': return {fillColor: "#000000", radius:2, fillOpacity: 1, stroke:false};
+        case ' no': return {fillColor: "#000000", radius:2, fillOpacity: 1, stroke:false};
+        case 'no': return {fillColor: "#000000", radius:2, fillOpacity: 1, stroke:false};
+        case 'yes':   return {fillColor: "#b2182b", radius:4, fillOpacity: 1, stroke:false};
       }
     };
 
@@ -45,9 +47,10 @@ $(document).ready(function() {
   $.ajax({url: dataset, dataType: 'json'}).done(function(data) {
     rawBillboard = data;
     billboards = L.geoJson(rawBillboard, {
-            pointToLayer: function (feature, latlng) {
-            return L.circleMarker(latlng, geojsonMarkerOptions(feature));}
+      pointToLayer: function (feature, latlng) {
+      return L.circleMarker(latlng, geojsonMarkerOptions(feature));}
     }).addTo(map);
+    alert("Maps complete, but legends are still in work.");
     currentLayer = billboards;
   });
 });
