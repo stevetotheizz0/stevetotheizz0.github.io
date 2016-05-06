@@ -1,7 +1,8 @@
-var dataset1 = "http://data.phl.opendata.arcgis.com/datasets/405ec3da942d4e20869d4e1449a2be48_0.geojson";
-var dataset ="https://raw.githubusercontent.com/stevetotheizz0/stevetotheizz0.github.io/master/Billboard_Project/json/billboardData.geojson";
-var parks = "Billboard_Project/json/PhiladelphiaParks.geojson";
-var boundaryStyle = {
+var billboards;
+    philaBounds = "http://data.phl.opendata.arcgis.com/datasets/405ec3da942d4e20869d4e1449a2be48_0.geojson";
+    dataset ="https://raw.githubusercontent.com/stevetotheizz0/stevetotheizz0.github.io/master/Billboard_Project/json/billboardData.geojson";
+    parks = "Billboard_Project/json/PhiladelphiaParks.geojson";
+    boundaryStyle = {
     "color": "#252525",
     "weight": 3,
     "stroke": true,
@@ -27,7 +28,10 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
 }).addTo(map);
 
 $(document).ready(function() {
-  $.ajax(dataset).done(function(data) {
-    myFeatureGroup = L.geoJson(data).addTo(map);
+  $.ajax(philaBounds).done(function(data) {
+    myFeatureGroup = L.geoJson(data, {"style":boundaryStyle}).addTo(map);
+  });
+  $.ajax({url: dataset, dataType: 'json'}).done(function(data) {
+    billboards = L.geoJson(data).addTo(map);
   });
 });
