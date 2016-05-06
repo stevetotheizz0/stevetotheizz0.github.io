@@ -1,5 +1,5 @@
 var dataset1 = "http://data.phl.opendata.arcgis.com/datasets/405ec3da942d4e20869d4e1449a2be48_0.geojson";
-var dataset ="https://raw.githubusercontent.com/stevetotheizz0/stevetotheizz0.github.io/master/Billboard_Project/json/Billboards_WGS1984.geojson";
+var dataset ="https://raw.githubusercontent.com/stevetotheizz0/stevetotheizz0.github.io/master/Billboard_Project/json/billboardData.geojson";
 var parks = "Billboard_Project/json/PhiladelphiaParks.geojson";
 var boundaryStyle = {
     "color": "#252525",
