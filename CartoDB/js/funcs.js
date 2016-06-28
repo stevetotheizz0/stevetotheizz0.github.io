@@ -14,7 +14,7 @@ $(".dropdown").on("click", "li", function(event){
 
 function nClosest(point, n) {
 
-  var sql = 'SELECT * FROM nyc_flickr_photos ORDER BY the_geom <-> ST_Point(' + point.lng + ',' + point.lat + ') LIMIT ' + n;
+  var sql = 'SELECT * FROM nyc_flickr_photos ORDER BY the_geom <-> ST_SetSRID(ST_Point('+ point.lng + ',' + point.lat + '),4326) LIMIT ' + n;
   console.log(sql);
   $.ajax('https://stephenjskilton.cartodb.com/api/v2/sql?q=' + sql).done(function(results) {
     addRecords(results);

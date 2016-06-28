@@ -50,7 +50,6 @@ $(document).ready(function() {
       pointToLayer: function (feature, latlng) {
       return L.circleMarker(latlng, geojsonMarkerOptions(feature));}
     }).addTo(map);
-    alert("Maps complete, but legends are still in work.");
     currentLayer = billboards;
   });
 });

@@ -2,6 +2,8 @@
 var narrative = document.getElementById('narrative'),
     sections = narrative.getElementsByTagName('section'),
     currentId = 'first';
+    currentLegend = '#Strength';
+
 
 /*
     var geojsonMarkerOptions = {
@@ -21,6 +23,10 @@ var narrative = document.getElementById('narrative'),
 
 
 var locations = function(){
+  $(currentLegend).hide();
+  currentLegend = '#Location';
+  $(currentLegend).show();
+
   map.removeLayer(currentLayer);
   var geojsonMarkerOptions = function(feature) {
         switch (feature.properties.Digital) {
@@ -37,6 +43,10 @@ var locations = function(){
   currentLayer = billboards;
 };
 var traffic = function(){
+  $(currentLegend).hide();
+  currentLegend = '#Strength';
+  $(currentLegend).show();
+
   map.removeLayer(currentLayer);
   var geojsonMarkerOptions = function(feature) {
         if(feature.properties.DLY_VMT < 10000) {                                             return {fillColor: "#D79E9E", radius:2, fillOpacity: 1, stroke:true, weight: 0.5, opacity: 1,color: "#000000", };}
@@ -52,6 +62,10 @@ var traffic = function(){
   currentLayer = billboards;
 };
 var buildings = function(){
+  $(currentLegend).hide();
+  currentLegend = '#TradeIn';
+  $(currentLegend).show();
+
   map.removeLayer(currentLayer);
   var geojsonMarkerOptions = function(feature) {
         switch (feature.properties.MktAnalysi) {
@@ -68,6 +82,9 @@ var buildings = function(){
   currentLayer = billboards;
 };
 var digital = function(){
+  $(currentLegend).hide();
+  currentLegend = '#Vacant';
+  $(currentLegend).show();
   map.removeLayer(currentLayer);
   var geojsonMarkerOptions = function(feature) {
         switch (feature.properties.building) {
