@@ -23,6 +23,22 @@ footer {
   padding-bottom: 125px;
 }
 
+#portfolio .portfolio-hover {
+  background: rgba(245, 245, 245, 0.65);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+
+#portfolio .portfolio-hover:hover {
+  opacity: 1;
+}
+
+
 .intro_map {
   height: 325px;
 }
