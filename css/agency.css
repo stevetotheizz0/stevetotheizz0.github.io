@@ -1,3 +1,5 @@
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -20,7 +22,13 @@ footer {
 }
 
 #contact{
-  padding-bottom: 125px;
+  margin-top: 75px;
+  padding-bottom: 100px;
+  width: 100%;
+  font-size: 15px;
+  background-color: #242425;
+  color: #D3D3D5;
+
 }
 
 #portfolio .portfolio-hover {
@@ -36,6 +44,39 @@ footer {
 
 #portfolio .portfolio-hover:hover {
   opacity: 1;
+}
+
+#services{
+  height: auto;
+  margin-top: 50px;
+  padding-bottom: 125px;
+  width: 100%;
+}
+
+.banner-social-buttons{
+  padding-top: 50px;
+}
+
+.servicelist {
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.custom-bullet li {
+    display: block;
+}
+
+.custom-bullet li:before
+{
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
 }
 
 
@@ -137,6 +178,12 @@ footer {
   }
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
+  }
+}
+
+@media (max-width: 990px){
+  .servicelist {
+    margin-left: 120px;
   }
 }
 
