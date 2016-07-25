@@ -1,3 +1,9 @@
+window.onload = function () {
+    document.getElementById('modal').onclick = function () {
+        document.getElementById('modal').style.display = "none";
+    };
+};
+
 var map = L.map('map', {
   center: [40.72463,	-73.96698],
   zoom: 13,
