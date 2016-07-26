@@ -5,6 +5,10 @@ body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+#serviceTable {
+  margin: 0px auto;   
+}
+
 footer {
   padding-top: 25px;
   padding-right: 0px;
