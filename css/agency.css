@@ -101,7 +101,7 @@ footer {
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
-  color: #fed136;
+  color: #fb8f28;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 400;
 }
@@ -116,22 +116,22 @@ footer {
   background-color: #222222;
 }
 .navbar-default .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #fb8f28;
+  border-color: #fb8f28;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #fed136;
+  background-color: #fb8f28;
 }
 .navbar-default .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #fec503;
+  color: #fb8f28;
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
@@ -141,12 +141,12 @@ footer {
 .navbar-default .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #fed136;
+  background-color: #fb8f28;
 }
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #fec503;
+  background-color: #fb8f28;
 }
 
 .team-member {
@@ -212,5 +212,5 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #fed136;
+  background-color: #fb8f28;
 }
