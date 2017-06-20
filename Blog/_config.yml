@@ -1,0 +1,4 @@
+highlighter: rouge
+markdown: redcarpet
+exclude: ["README.md"]
+baseurl: /blog
