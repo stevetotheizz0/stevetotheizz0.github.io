@@ -1,5 +1,5 @@
 var billboards;
-    philaBounds = "http://data.phl.opendata.arcgis.com/datasets/405ec3da942d4e20869d4e1449a2be48_0.geojson";
+    //philaBounds = "http://data.phl.opendata.arcgis.com/datasets/405ec3da942d4e20869d4e1449a2be48_0.geojson";
     dataset ="https://raw.githubusercontent.com/stevetotheizz0/stevetotheizz0.github.io/master/Billboard_Project/json/billboardData1.json";
     parks = "Billboard_Project/json/PhiladelphiaParks.geojson";
     boundaryStyle = {
@@ -42,9 +42,9 @@ var geojsonMarkerOptions = function(feature) {
 
 
 $(document).ready(function() {
-  $.ajax(philaBounds).done(function(data) {
-    myFeatureGroup = L.geoJson(data, {"style":boundaryStyle}).addTo(map);
-  });
+  //$.ajax(philaBounds).done(function(data) {
+  //  myFeatureGroup = L.geoJson(data, {"style":boundaryStyle}).addTo(map);
+  //});
   $.ajax({url: dataset, dataType: 'json'}).done(function(data) {
     rawBillboard = data;
     billboards = L.geoJson(rawBillboard, {
