@@ -14,9 +14,10 @@ var billboards;
 
 
 var map = L.map('map', {
-  center: [39.99305, -75.121374],
+  center: [39.92505, -75.121374],
   zoomControl:false,
-  zoom: 11
+  scrollWheelZoom: false,
+  zoom: 12
 });
 
 var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {

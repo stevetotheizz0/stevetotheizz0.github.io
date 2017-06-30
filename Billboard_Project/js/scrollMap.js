@@ -122,7 +122,9 @@ changeMap(newId);
 
 }
 
-window.onscroll = function(e) {
+container = document.getElementById('narrative');
+
+container.onscroll = function(e) {
   var narrativeHeight = narrative.clientWidth;
   var newId = currentId;
   // Find the section that's currently scrolled-to.

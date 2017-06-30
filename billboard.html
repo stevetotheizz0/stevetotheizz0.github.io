@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Stephen Skilton Geospatial Analyst</title>
-  <link rel="stylesheet" href="css/leaflet.css" />
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/agency.css" rel="stylesheet">
   <link href="Billboard_Project/css/billboard.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/leaflet.css" />
 
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -61,7 +61,95 @@
   <section id="portfolio" >
     <div class="container">
       <div class="row">
-        <div  class="text col-sm-6"id="narrative">
+        <div class="col-sm-5">
+          <div id="map" class="map" style="height: 90vh;">
+            <div class="legend" id="Location">
+              <p><b>Billboard Locations</b></p>
+              <table>
+                <tr>
+                <td><img src="Billboard_Project/img/loc_static.png"></td>
+                <td style="padding-left: 5px">Static</td>
+                </tr>
+                <tr>
+                <td><img src="Billboard_Project/img/loc_digital.png"></td>
+                <td style="padding-left: 5px">Digital</td>
+                </tr>
+              </table>
+            </div>
+            <div class="legend" id="Strength" style="display: none;">
+              Billboard Strength
+              <table>
+                <tr>
+                <td><img src="Billboard_Project/img/vmt_1.png"></td>
+                <td style="padding-left: 5px">25 - 10,000</td>
+                </tr>
+                <tr>
+                <td><img src="Billboard_Project/img/vmt_2.png"></td>
+                <td style="padding-left: 5px">10,001 - 25,000</td>
+                </tr>
+                <tr>
+                <td><img src="Billboard_Project/img/vmt_3.png"></td>
+                <td style="padding-left: 5px">25,001 - 50,000</td>
+                </tr>
+                <tr>
+                <td><img src="Billboard_Project/img/vmt_4.png"></td>
+                <td style="padding-left: 5px">50,001 - 100,000</td>
+                </tr>
+                <tr>
+                <td><img src="Billboard_Project/img/vmt_5.png"></td>
+                <td style="padding-left: 5px">100,001 - 200,000</td>
+                </tr>
+              </table>
+            </div>
+            <div class="legend" id="TradeIn" style="display: none;">
+              Billboard TradeIn
+              <table>
+                <tr>
+                <td><img src="Billboard_Project/img/tradeIn_weak.png"></td>
+                <td style="padding-left: 5px">Within a Weak Market</td>
+                </tr>
+                <tr>
+                <td><img src="Billboard_Project/img/match_buildingNear.png"></td>
+                <td style="padding-left: 5px">Legal Non-Compliant Locations</td>
+                </tr>
+                <tr>
+                <td><img src="Billboard_Project/img/tradeIn_fromCluster.png"></td>
+                <td style="padding-left: 5px">Location From A Cluster</td>
+                </tr>
+                <tr>
+                <td><img src="Billboard_Project/img/tradeIn_clear.png"></td>
+                <td style="padding-left: 5px">Locations Clear within 500 ft</td>
+                </tr>
+              </table>
+            </div>
+            <div class="legend" id="Vacant" style="display: none;">
+              Billboard Vacant
+              <table>
+              <tr>
+              <td><img src="Billboard_Project/img/match_noBuilding.png"></td>
+              <td style="padding-left: 5px">No Building</td>
+              </tr>
+              <tr>
+              <td><img src="Billboard_Project/img/match_noNear.png"></td>
+              <td style="padding-left: 5px">No Building, Near Match</td>
+              </tr>
+              <tr>
+              <td><img src="Billboard_Project/img/match_building.png"></td>
+              <td style="padding-left: 5px">Building</td>
+              </tr>
+              <tr>
+              <td><img src="Billboard_Project/img/match_buildingNear.png"></td>
+              <td style="padding-left: 5px">Building, Near Match</td>
+              </tr>
+              <tr>
+              <td><img src="Billboard_Project/img/match_unmatched.png"></td>
+              <td style="padding-left: 5px">Unmatched</td>
+              </tr>
+            </table>
+            </div>
+          </div>
+        </div>
+        <div  class="text col-sm-7 scroll" id="narrative" data-spy="scroll" style="height: 90vh;">
           <section id="first">
           <h1> Philadelphia Billboard Study </h1>
           <br>
@@ -120,93 +208,6 @@
           <p>In total 1,666 separate sign faces were analyzed 1,057 faces were located either on or within 30ft of a parcel with a building. The total number of billboards faces located on a vacant parcel, that were not in a strong market area were 193. Analysis was done by comparing the parcel with the OPA land use assessment shown below. The remaining number were unmatched with a parcel nearby. This number represents only 10% of the total signs in the city.
           </p>
         </section>
-        </div>
-        <div class="col-sm-1"></div>
-        <div id="map" class="map col-sm-5">
-          <div class="legend" id="Location">
-            <p><b>Billboard Locations</b></p>
-            <table>
-                <tr>
-                <td><img src="Billboard_Project/img/loc_static.png"></td>
-                <td style="padding-left: 5px">Static</td>
-                </tr>
-                <tr>
-                <td><img src="Billboard_Project/img/loc_digital.png"></td>
-                <td style="padding-left: 5px">Digital</td>
-                </tr>
-          </table>
-          </div>
-          <div class="legend" id="Strength" style="display: none;">
-            Billboard Strength
-            <table>
-            <tr>
-            <td><img src="Billboard_Project/img/vmt_1.png"></td>
-            <td style="padding-left: 5px">25 - 10,000</td>
-            </tr>
-            <tr>
-            <td><img src="Billboard_Project/img/vmt_2.png"></td>
-            <td style="padding-left: 5px">10,001 - 25,000</td>
-            </tr>
-            <tr>
-            <td><img src="Billboard_Project/img/vmt_3.png"></td>
-            <td style="padding-left: 5px">25,001 - 50,000</td>
-            </tr>
-            <tr>
-            <td><img src="Billboard_Project/img/vmt_4.png"></td>
-            <td style="padding-left: 5px">50,001 - 100,000</td>
-            </tr>
-            <tr>
-            <td><img src="Billboard_Project/img/vmt_5.png"></td>
-            <td style="padding-left: 5px">100,001 - 200,000</td>
-            </tr>
-          </table>
-          </div>
-          <div class="legend" id="TradeIn" style="display: none;">
-            Billboard TradeIn
-            <table>
-            <tr>
-            <td><img src="Billboard_Project/img/tradeIn_weak.png"></td>
-            <td style="padding-left: 5px">Within a Weak Market</td>
-            </tr>
-            <tr>
-            <td><img src="Billboard_Project/img/match_buildingNear.png"></td>
-            <td style="padding-left: 5px">Legal Non-Compliant Locations</td>
-            </tr>
-            <tr>
-            <td><img src="Billboard_Project/img/tradeIn_fromCluster.png"></td>
-            <td style="padding-left: 5px">Location From A Cluster</td>
-            </tr>
-            <tr>
-            <td><img src="Billboard_Project/img/tradeIn_clear.png"></td>
-            <td style="padding-left: 5px">Locations Clear within 500 ft</td>
-            </tr>
-          </table>
-          </div>
-          <div class="legend" id="Vacant" style="display: none;">
-            Billboard Vacant
-            <table>
-            <tr>
-            <td><img src="Billboard_Project/img/match_noBuilding.png"></td>
-            <td style="padding-left: 5px">No Building</td>
-            </tr>
-            <tr>
-            <td><img src="Billboard_Project/img/match_noNear.png"></td>
-            <td style="padding-left: 5px">No Building, Near Match</td>
-            </tr>
-            <tr>
-            <td><img src="Billboard_Project/img/match_building.png"></td>
-            <td style="padding-left: 5px">Building</td>
-            </tr>
-            <tr>
-            <td><img src="Billboard_Project/img/match_buildingNear.png"></td>
-            <td style="padding-left: 5px">Building, Near Match</td>
-            </tr>
-            <tr>
-            <td><img src="Billboard_Project/img/match_unmatched.png"></td>
-            <td style="padding-left: 5px">Unmatched</td>
-            </tr>
-          </table>
-          </div>
         </div>
       </div>
     </div>
