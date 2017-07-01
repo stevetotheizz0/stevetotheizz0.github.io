@@ -1,14 +1,30 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   padding-top: 100px;
-  position: relative;
 }
 
 .map{
-  height: 550px;
-  top: 50;
-  right: 50px;
-  position: fixed;
+  margin-left: 0px;
+  position: relative;
+  min-height: 100%;
 }
+
+.scroll {
+  margin-right: 0px;
+  overflow-y: scroll;
+  position: relative;
+  min-height: 100%;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+@me
 
 #fourth{
   padding-bottom: 350px;
@@ -38,9 +54,6 @@ table{
   overflow-y: hidden;
   padding: 10px;
 }
-
-
-
 
 .colorKey {
   width:20px;
