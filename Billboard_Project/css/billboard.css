@@ -13,6 +13,10 @@ body {
   min-height: 100%;
 }
 
+.navbar-default{
+  background-color: white;
+}
+
 .scroll {
   margin-right: 0px;
   overflow-y: scroll;
