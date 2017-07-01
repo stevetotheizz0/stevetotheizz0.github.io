@@ -14,7 +14,7 @@ var billboards;
 
 
 var map = L.map('map', {
-  center: [39.9605, -75.13374],
+  center: [39.92505, -75.121374],
   zoomControl:false,
   scrollWheelZoom: false,
   zoom: 12
