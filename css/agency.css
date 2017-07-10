@@ -17,8 +17,7 @@ footer {
   text-align: center;
   background-color: #222222;
   color: white;
-  position: absolute;
-  bottom:0;
+  position: relative;
   z-index: 9999;
 }
 
