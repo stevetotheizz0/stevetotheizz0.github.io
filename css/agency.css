@@ -13,13 +13,13 @@ footer {
   padding-top: 25px;
   padding-right: 0px;
   padding-bottom: 25px;
-  padding-left: 0px
+  padding-left: 0px;
   text-align: center;
   background-color: #222222;
   color: white;
   position: relative;
   z-index: 9999;
-  width: 100%"
+  width: 100%
 }
 
 #bio{
