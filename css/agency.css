@@ -51,10 +51,15 @@ footer {
   opacity: 1;
 }
 
+#blog {
+
+  padding-bottom: 75px;
+}
+
 #services{
   height: auto;
   margin-top: 50px;
-  padding-bottom: 125px;
+  padding-bottom: 75px;
   width: 100%;
 }
 
