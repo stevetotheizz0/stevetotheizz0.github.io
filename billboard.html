@@ -10,238 +10,244 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/agency.css" rel="stylesheet">
   <link href="Billboard_Project/css/billboard.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/leaflet.css" />
+  <link href="css/leaflet.css" rel="stylesheet">
 
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800' rel='stylesheet' type='text/css'>
 
 </head>
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-      <div>
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header page-scroll">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand page-scroll" href="index.html">Stephen Skilton</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                  <li class="hidden">
-                      <a href="#page-top"></a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="http://www.stephenskilton.com#about">About</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="http://www.stephenskilton.com#portfolio">Portfolio</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="http://www.stephenskilton.com#services">Services</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="http://www.stephenskilton.com#contact">Contact</a>
-                  </li>
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container-fluid -->
-  </nav>
-
-  <section id="portfolio" >
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5">
-          <div id="map" class="map" style="height: 90vh;">
-            <div class="legend" id="Location">
-              <p><b>Billboard Locations</b></p>
-              <table>
-                <tr>
-                <td><img src="Billboard_Project/img/loc_static.png"></td>
-                <td style="padding-left: 5px">Static</td>
-                </tr>
-                <tr>
-                <td><img src="Billboard_Project/img/loc_digital.png"></td>
-                <td style="padding-left: 5px">Digital</td>
-                </tr>
-              </table>
+<div id="main-wrapper">
+  <body id="page-top" class="index">
+      <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll"style="background-color: #222222">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Stephen Skilton</a>
             </div>
-            <div class="legend" id="Strength" style="display: none;">
-              Billboard Strength
-              <table>
-                <tr>
-                <td><img src="Billboard_Project/img/vmt_1.png"></td>
-                <td style="padding-left: 5px">25 - 10,000</td>
-                </tr>
-                <tr>
-                <td><img src="Billboard_Project/img/vmt_2.png"></td>
-                <td style="padding-left: 5px">10,001 - 25,000</td>
-                </tr>
-                <tr>
-                <td><img src="Billboard_Project/img/vmt_3.png"></td>
-                <td style="padding-left: 5px">25,001 - 50,000</td>
-                </tr>
-                <tr>
-                <td><img src="Billboard_Project/img/vmt_4.png"></td>
-                <td style="padding-left: 5px">50,001 - 100,000</td>
-                </tr>
-                <tr>
-                <td><img src="Billboard_Project/img/vmt_5.png"></td>
-                <td style="padding-left: 5px">100,001 - 200,000</td>
-                </tr>
-              </table>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://www.stephenskilton.com#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll forced-active" href="http://www.stephenskilton.com#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://www.stephenskilton.com#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://www.stephenskilton.com#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="legend" id="TradeIn" style="display: none;">
-              Billboard TradeIn
-              <table>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section id="portfolio" >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div id="map" class="map" style="height: 90vh;">
+              <div class="legend" id="Location">
+                <p><b>Billboard Locations</b></p>
+                <table>
+                  <tr>
+                  <td><img src="Billboard_Project/img/loc_static.png"></td>
+                  <td style="padding-left: 5px">Static</td>
+                  </tr>
+                  <tr>
+                  <td><img src="Billboard_Project/img/loc_digital.png"></td>
+                  <td style="padding-left: 5px">Digital</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="legend" id="Strength" style="display: none;">
+                Billboard Strength
+                <table>
+                  <tr>
+                  <td><img src="Billboard_Project/img/vmt_1.png"></td>
+                  <td style="padding-left: 5px">25 - 10,000</td>
+                  </tr>
+                  <tr>
+                  <td><img src="Billboard_Project/img/vmt_2.png"></td>
+                  <td style="padding-left: 5px">10,001 - 25,000</td>
+                  </tr>
+                  <tr>
+                  <td><img src="Billboard_Project/img/vmt_3.png"></td>
+                  <td style="padding-left: 5px">25,001 - 50,000</td>
+                  </tr>
+                  <tr>
+                  <td><img src="Billboard_Project/img/vmt_4.png"></td>
+                  <td style="padding-left: 5px">50,001 - 100,000</td>
+                  </tr>
+                  <tr>
+                  <td><img src="Billboard_Project/img/vmt_5.png"></td>
+                  <td style="padding-left: 5px">100,001 - 200,000</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="legend" id="TradeIn" style="display: none;">
+                Billboard TradeIn
+                <table>
+                  <tr>
+                  <td><img src="Billboard_Project/img/tradeIn_weak.png"></td>
+                  <td style="padding-left: 5px">Within a Weak Market</td>
+                  </tr>
+                  <tr>
+                  <td><img src="Billboard_Project/img/match_buildingNear.png"></td>
+                  <td style="padding-left: 5px">Legal Non-Compliant Locations</td>
+                  </tr>
+                  <tr>
+                  <td><img src="Billboard_Project/img/tradeIn_fromCluster.png"></td>
+                  <td style="padding-left: 5px">Location From A Cluster</td>
+                  </tr>
+                  <tr>
+                  <td><img src="Billboard_Project/img/tradeIn_clear.png"></td>
+                  <td style="padding-left: 5px">Locations Clear within 500 ft</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="legend" id="Vacant" style="display: none;">
+                Billboard Vacant
+                <table>
                 <tr>
-                <td><img src="Billboard_Project/img/tradeIn_weak.png"></td>
-                <td style="padding-left: 5px">Within a Weak Market</td>
+                <td><img src="Billboard_Project/img/match_noBuilding.png"></td>
+                <td style="padding-left: 5px">No Building</td>
+                </tr>
+                <tr>
+                <td><img src="Billboard_Project/img/match_noNear.png"></td>
+                <td style="padding-left: 5px">No Building, Near Match</td>
+                </tr>
+                <tr>
+                <td><img src="Billboard_Project/img/match_building.png"></td>
+                <td style="padding-left: 5px">Building</td>
                 </tr>
                 <tr>
                 <td><img src="Billboard_Project/img/match_buildingNear.png"></td>
-                <td style="padding-left: 5px">Legal Non-Compliant Locations</td>
+                <td style="padding-left: 5px">Building, Near Match</td>
                 </tr>
                 <tr>
-                <td><img src="Billboard_Project/img/tradeIn_fromCluster.png"></td>
-                <td style="padding-left: 5px">Location From A Cluster</td>
-                </tr>
-                <tr>
-                <td><img src="Billboard_Project/img/tradeIn_clear.png"></td>
-                <td style="padding-left: 5px">Locations Clear within 500 ft</td>
+                <td><img src="Billboard_Project/img/match_unmatched.png"></td>
+                <td style="padding-left: 5px">Unmatched</td>
                 </tr>
               </table>
-            </div>
-            <div class="legend" id="Vacant" style="display: none;">
-              Billboard Vacant
-              <table>
-              <tr>
-              <td><img src="Billboard_Project/img/match_noBuilding.png"></td>
-              <td style="padding-left: 5px">No Building</td>
-              </tr>
-              <tr>
-              <td><img src="Billboard_Project/img/match_noNear.png"></td>
-              <td style="padding-left: 5px">No Building, Near Match</td>
-              </tr>
-              <tr>
-              <td><img src="Billboard_Project/img/match_building.png"></td>
-              <td style="padding-left: 5px">Building</td>
-              </tr>
-              <tr>
-              <td><img src="Billboard_Project/img/match_buildingNear.png"></td>
-              <td style="padding-left: 5px">Building, Near Match</td>
-              </tr>
-              <tr>
-              <td><img src="Billboard_Project/img/match_unmatched.png"></td>
-              <td style="padding-left: 5px">Unmatched</td>
-              </tr>
-            </table>
+              </div>
             </div>
           </div>
-        </div>
-        <div  class="text col-sm-7 scroll" id="narrative" data-spy="scroll" style="height: 90vh;">
-          <section id="first">
-          <h1> Philadelphia Billboard Study </h1>
-          <br>
-            You may download a PDF of the original report <a href="stevetotheizz0.github.io/Billboard_Project/Phila_Billboard_Research_2016_Skilton.pdf" download>here</a>.
-            <br>
-          <h3>Introduction</h3>
-          <p>Philadelphia is a city covered with an abundance of outdoor advertising signs across its landscape. At least 1,917 sign faces in Philadelphia are owned by just the top 4 operators. According to Jared Brey from PlanPhilly, “that’s an average of 13 billboards per square mile, if evenly spread out.”
-          </p>
-          <p>
-            The opportunity for new legislation brings the chance for additional policy changes, such as existing tax policies. Currently the city generates no greater revenue from billboards than any other business. A 7% excise tax is paid on billboards but only by the advertisers not operators. This 7% tax is equivalent to the rate of sales tax which is not applicable to the industry. Owners only need to pay a permitting fee of $650, and then an annual fee of $150 which can only be used to fund enforcement, not revenue. These fees are also accompanied by the typical commercial and business revenue taxes paid for any business.
-          </p>
-          <p>By comparison the parking industry pays a parking tax of 22% on gross earnings in taxes. This parking tax policy is meant to encourage better utilization of land by limiting revenues. The billboard industry could generate city revenue through the use of a fixed tax, which would have the biggest discouraging effect only on signs generating little or no revenue.
-          </p>
-          <p>The first aim of this analysis is to identify the financial structure and value of billboards. Identifying the costs and revenue structure would allow for an assessment of possible tax policies that could generate revenue for the city while achieving additional positive effects. The first of which would be to identify a tax level that most adversely affects non-performing billboards with little or no value. With 1,917 sign faces any attempt at enforcement or other policies is unfeasible. Other tax strategies will also be recommended to maximize revenue without eliminating the overall financially viability of the industry.
-          </p>
-          <p>The second aim of this report is to evaluate the effects of the digital conversion policy created by The City zoning amendment to outdoor advertising signs passed in 2015 that requires city approval for any conversion of an existing static sign to digital. It also requires the removal of 2 existing legally compliant static signs for the conversion of an existing sign.
-          </p>
-          <p>The financial value of signs at various market levels will be compared to the value of a digital sign to determine how many signs would be available to trade in profitably. This analysis will also determine whether a higher trade in level such as 4:1 is financially viable. Analysis will also be determined on the receiving end to identify the total number of possible conversion locations given the supply of feasible signs.
-          </p>
-          <p>The results indicate that a combination of a fixed tax policy, along with a change in Use and Occupancy tax valuation could yield the city a net revenue gain of $8.5 million annually initially. Other results also indicate that the current digital conversion regulation could allow for 72 locations of conversion based on current inventory and revenue returns unless additional restrictions are enacted.
-          </p>
-        </section>
-        <h3>Market Strength</h3>
-          <section id="second">
-          <p>The range in revenue and value of a billboard can vary depending on its location and exposure to the public. Combining the publicized 4 week price for a billboard ad with the traffic exposure allows one to estimate the geographic locations of the best and worst performing signs. Road traffic counts are publicly available and obtained from the regional planning commission for analysis. Traffic exposure was combined with data regarding the number of faces per location to further evaluate clusters of high and low revenue generation geographically.
-          <p>Traffic counts obtained from PennDOT in GIS format were overlaid with billboard locations geocoded by Scenic Philadelphia. The market strength was determined by VMT levels of the nearest road with an additional 300 ft buffer used to include signs near highways. Thresholds for each category were determined by levels that typically separate the character of major highways, and arterial state roads within the city.
-          </p>
-        </section>
-        <h3>Analysis of the Digital Trade In Legislation</h3>
-          <section id="third">
-          <p>City council passed a revision ot the zoning code in 2015 allowing a two for one digital conversion policy. This policy would result in many of the billboards in weak and mid markets being traded toward the conversion of existing static signs in strong market locations. The maps to the right reflect what areas area represented by potential sending and receiving locations if such a trade-in policy as recommended in the 2015 legislation were actually placed into effect without any constraint under the current financial estimates.
-          </p>
-          <p>Under a trade-in for digital policy every weak and many of the mid-market locations depicted in blue could be available and would likely be financially worthwhile to trade-in for a new digital location. The revenue they generate as static signs is consistently lower than what a digital sign in a strong market area would produce. The overwhelming supply of viable signs for trade in makes it difficult to evaluate the location and net gain that a trade-in policy would generate.
-          </p>
-          <p>The other aspect to consider is how many of the strong market sign locations would be eligible. The city zoning ordinance20 places the following pertinent restrictions for sign locations:
-            <ul>
-              <li>  Within 660ft of a highway on/off ramp.</li>
-              <li>  Within 300 ft of a residential area.</li>
-              <li>  Within 660 ft of a public or private school.</li>
-              <li>  Within 660 feet of a public park.</li>
-              <li>  Within an area zoned for industrial use.</li>
-              <li>  Outside of the area bounded by Darien St.</li>
-            </ul
-
-          </p>
-          <p>Any new conversions would have to be compliant. All other existing billboards are considered legal but non-compliant. The strong market locations were re-evaluated under these zoning requirements. Data was evaluated per location (844 total) not per sign face.
-          </p>
-          <p>Other zoning restrictions for new signs are in place but did not affect the strong market subset of sign locations. In addition to the restrictions list previously, signs must also be distanced 500 ft from one another. In areas where signs were closer than this buffer, a sample were selected to create the greatest quantity of conforming locations. The map to the right depicts the results.
-          </p>
-          <p>The final result of applying the restrictions to determine the max number of legal conforming strong market locations left 36 locations that were currently conforming to the zoning code. Another 36 could be selected from closely grouped clusters as conforming as well to give a maximum availability of 72 possible digital billboards.
-          </p>
-          <p>Additional regulations should be considered if a different outcome were desired by the public. Limiting the quantity and negotiation which locations would be traded in are one option. Outright restrictions may be another, but would face opposition due to the financial incentives. Finally, reducing the overall inventory might change the landscape for the negotiation of future legislation.
-          </p>
-          <h3>Analysis of Vacant Billboard Parcels</h3>
+          <div  class="text col-sm-7 scroll" id="narrative" data-spy="scroll" style="height: 90vh;">
+            <section id="first">
+              <h1> Philadelphia Billboard Study </h1>
+              <br>
+              You may download a PDF of the original report <a href="stevetotheizz0.github.io/Billboard_Project/Phila_Billboard_Research_2016_Skilton.pdf" download>here</a>.
+              <br>
+              <h3>Introduction</h3>
+              <p>Philadelphia is a city covered with an abundance of outdoor advertising signs across its landscape. At least 1,917 sign faces in Philadelphia are owned by just the top 4 operators. According to Jared Brey from PlanPhilly, “that’s an average of 13 billboards per square mile, if evenly spread out.”
+              </p>
+              <p>
+                The opportunity for new legislation brings the chance for additional policy changes, such as existing tax policies. Currently the city generates no greater revenue from billboards than any other business. A 7% excise tax is paid on billboards but only by the advertisers not operators. This 7% tax is equivalent to the rate of sales tax which is not applicable to the industry. Owners only need to pay a permitting fee of $650, and then an annual fee of $150 which can only be used to fund enforcement, not revenue. These fees are also accompanied by the typical commercial and business revenue taxes paid for any business.
+              </p>
+              <p>By comparison the parking industry pays a parking tax of 22% on gross earnings in taxes. This parking tax policy is meant to encourage better utilization of land by limiting revenues. The billboard industry could generate city revenue through the use of a fixed tax, which would have the biggest discouraging effect only on signs generating little or no revenue.
+              </p>
+              <p>The first aim of this analysis is to identify the financial structure and value of billboards. Identifying the costs and revenue structure would allow for an assessment of possible tax policies that could generate revenue for the city while achieving additional positive effects. The first of which would be to identify a tax level that most adversely affects non-performing billboards with little or no value. With 1,917 sign faces any attempt at enforcement or other policies is unfeasible. Other tax strategies will also be recommended to maximize revenue without eliminating the overall financially viability of the industry.
+              </p>
+              <p>The second aim of this report is to evaluate the effects of the digital conversion policy created by The City zoning amendment to outdoor advertising signs passed in 2015 that requires city approval for any conversion of an existing static sign to digital. It also requires the removal of 2 existing legally compliant static signs for the conversion of an existing sign.
+              </p>
+              <p>The financial value of signs at various market levels will be compared to the value of a digital sign to determine how many signs would be available to trade in profitably. This analysis will also determine whether a higher trade in level such as 4:1 is financially viable. Analysis will also be determined on the receiving end to identify the total number of possible conversion locations given the supply of feasible signs.
+              </p>
+              <p>The results indicate that a combination of a fixed tax policy, along with a change in Use and Occupancy tax valuation could yield the city a net revenue gain of $8.5 million annually initially. Other results also indicate that the current digital conversion regulation could allow for 72 locations of conversion based on current inventory and revenue returns unless additional restrictions are enacted.
+              </p>
+            </section>
+            <h3>Market Strength</h3>
+            <section id="second">
+              <p>The range in revenue and value of a billboard can vary depending on its location and exposure to the public. Combining the publicized 4 week price for a billboard ad with the traffic exposure allows one to estimate the geographic locations of the best and worst performing signs. Road traffic counts are publicly available and obtained from the regional planning commission for analysis. Traffic exposure was combined with data regarding the number of faces per location to further evaluate clusters of high and low revenue generation geographically.
+              <p>Traffic counts obtained from PennDOT in GIS format were overlaid with billboard locations geocoded by Scenic Philadelphia. The market strength was determined by VMT levels of the nearest road with an additional 300 ft buffer used to include signs near highways. Thresholds for each category were determined by levels that typically separate the character of major highways, and arterial state roads within the city.
+              </p>
+            </section>
+            <h3>Analysis of the Digital Trade In Legislation</h3>
+            <section id="third">
+              <p>City council passed a revision ot the zoning code in 2015 allowing a two for one digital conversion policy. This policy would result in many of the billboards in weak and mid markets being traded toward the conversion of existing static signs in strong market locations. The maps to the right reflect what areas area represented by potential sending and receiving locations if such a trade-in policy as recommended in the 2015 legislation were actually placed into effect without any constraint under the current financial estimates.
+              </p>
+              <p>Under a trade-in for digital policy every weak and many of the mid-market locations depicted in blue could be available and would likely be financially worthwhile to trade-in for a new digital location. The revenue they generate as static signs is consistently lower than what a digital sign in a strong market area would produce. The overwhelming supply of viable signs for trade in makes it difficult to evaluate the location and net gain that a trade-in policy would generate.
+              </p>
+              <p>The other aspect to consider is how many of the strong market sign locations would be eligible. The city zoning ordinance20 places the following pertinent restrictions for sign locations:
+                <ul>
+                  <li>  Within 660ft of a highway on/off ramp.</li>
+                  <li>  Within 300 ft of a residential area.</li>
+                  <li>  Within 660 ft of a public or private school.</li>
+                  <li>  Within 660 feet of a public park.</li>
+                  <li>  Within an area zoned for industrial use.</li>
+                  <li>  Outside of the area bounded by Darien St.</li>
+                </ul>
+              </p>
+              <p>Any new conversions would have to be compliant. All other existing billboards are considered legal but non-compliant. The strong market locations were re-evaluated under these zoning requirements. Data was evaluated per location (844 total) not per sign face.
+              </p>
+              <p>Other zoning restrictions for new signs are in place but did not affect the strong market subset of sign locations. In addition to the restrictions list previously, signs must also be distanced 500 ft from one another. In areas where signs were closer than this buffer, a sample were selected to create the greatest quantity of conforming locations. The map to the right depicts the results.
+              </p>
+              <p>The final result of applying the restrictions to determine the max number of legal conforming strong market locations left 36 locations that were currently conforming to the zoning code. Another 36 could be selected from closely grouped clusters as conforming as well to give a maximum availability of 72 possible digital billboards.
+              </p>
+              <p>Additional regulations should be considered if a different outcome were desired by the public. Limiting the quantity and negotiation which locations would be traded in are one option. Outright restrictions may be another, but would face opposition due to the financial incentives. Finally, reducing the overall inventory might change the landscape for the negotiation of future legislation.
+              </p>
+              <h3>Analysis of Vacant Billboard Parcels</h3>
+            </section>
             <section id="fourth">
-          <p>Tax policy could theoretically lower the value of a billboard to the point where it becomes more worthwhile to sell and develop a vacant parcel that it is located within. However after evaluating whether this could have a significant impact in Philadelphia, the results indicates the overall the answer is no.
-          </p>
-          <p>In total 1,666 separate sign faces were analyzed 1,057 faces were located either on or within 30ft of a parcel with a building. The total number of billboards faces located on a vacant parcel, that were not in a strong market area were 193. Analysis was done by comparing the parcel with the OPA land use assessment shown below. The remaining number were unmatched with a parcel nearby. This number represents only 10% of the total signs in the city.
-          </p>
-        </section>
+              <p>Tax policy could theoretically lower the value of a billboard to the point where it becomes more worthwhile to sell and develop a vacant parcel that it is located within. However after evaluating whether this could have a significant impact in Philadelphia, the results indicates the overall the answer is no.
+              </p>
+              <p>In total 1,666 separate sign faces were analyzed 1,057 faces were located either on or within 30ft of a parcel with a building. The total number of billboards faces located on a vacant parcel, that were not in a strong market area were 193. Analysis was done by comparing the parcel with the OPA land use assessment shown below. The remaining number were unmatched with a parcel nearby. This number represents only 10% of the total signs in the city.
+              </p>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <footer>
-      <div class="container">
-          <div class="row">
-              <div class="col-md-4">
-                  <span class="copyright">Copyright &copy; Your Website 2014</span>
-              </div>
-              <div class="col-md-4">
-              </div>
-              <div class="col-md-4">
-                  <ul class="list-inline quicklinks">
-                      <li><a href="#">Privacy Policy</a>
-                      </li>
-                      <li><a href="#">Terms of Use</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </footer>
+    </section>
 
-  <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-  <script src="js/classie.js"></script>
-  <script src="js/cbpAnimatedHeader.js"></script>
-  <script src="js/agency.js"></script>
-  <script src="Billboard_Project/js/setup.js"></script>
-  <script src="Billboard_Project/js/scrollMap.js"></script>
-</body>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/agency.js"></script>
+    <script src="Billboard_Project/js/setup.js"></script>
+    <script src="Billboard_Project/js/scrollMap.js"></script>
+  </body>
+</div>
+
 </html>

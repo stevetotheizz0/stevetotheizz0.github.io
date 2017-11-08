@@ -3,8 +3,20 @@ html, body {
   margin: 0;
 }
 
-body {
-  padding-top: 100px;
+#main-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  padding: 100px 0 100px;
+  position: relative;
+  height: 100%;
+}
+
+footer {
+    bottom: 0;
+    height: 100px;
+    left: 0;
+    width: 100%;
+    position: absolute;
 }
 
 .map{

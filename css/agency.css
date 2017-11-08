@@ -1,29 +1,11 @@
 @import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
 
-body {
-  overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-#serviceTable {
-  margin: 0px auto;
-}
-
-footer {
-  padding-top: 25px;
-  padding-right: 0px;
-  padding-bottom: 25px;
-  padding-left: 0px;
-  text-align: center;
-  background-color: #222222;
-  color: white;
-  position: relative;
-  z-index: 9999;
-  width: 100%
-}
-
 #bio{
   margin-top: 20px;
+}
+
+#blog {
+  padding-bottom: 75px;
 }
 
 #contact{
@@ -33,7 +15,6 @@ footer {
   font-size: 15px;
   background-color: #242425;
   color: #D3D3D5;
-
 }
 
 #portfolio .portfolio-hover {
@@ -51,16 +32,15 @@ footer {
   opacity: 1;
 }
 
-#blog {
-
-  padding-bottom: 75px;
-}
-
 #services{
   height: auto;
   margin-top: 50px;
   padding-bottom: 75px;
   width: 100%;
+}
+
+#serviceTable {
+  margin: 0px auto;
 }
 
 .banner-social-buttons{
@@ -89,6 +69,11 @@ footer {
     color: #CCCCCC;
 }
 
+.forced-active {
+  color: white !important;
+  background-color: #fb8f28;
+  border-radius: 3px;
+}
 
 .intro_map {
   height: 325px;
@@ -197,6 +182,23 @@ footer {
   }
 }
 
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+footer {
+  padding-top: 25px;
+  padding-right: 0px;
+  padding-bottom: 25px;
+  padding-left: 0px;
+  text-align: center;
+  background-color: #222222;
+  color: white;
+  position: relative;
+  z-index: 9999;
+  width: 100%
+}
 
 ul.social-buttons {
   margin-bottom: 0;
