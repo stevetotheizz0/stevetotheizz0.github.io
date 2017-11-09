@@ -1,6 +1,26 @@
+html,
 body {
-  padding-top: 100px;
+  padding: 0;
+  height: 100%;
+  margin: 0;
 }
+
+footer {
+    bottom: 0;
+    height: 100px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+
+#main-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  padding: 100px 0 100px;
+  position: relative;
+  height: 100%;
+}
+
 
 .map{
   height: 475px;
