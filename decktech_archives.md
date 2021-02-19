@@ -1,7 +1,3 @@
----
-permalink: dechtech_archives
----
-
 <html>
 
 <h3>Unfortunately, due to recent events this site has been taken down.</h3>
