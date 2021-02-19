@@ -1,5 +1,5 @@
 ---
-permalink: /dechtech_archives
+permalink: dechtech_archives
 ---
 
 <html>
