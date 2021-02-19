@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+---
+permalink: /dechtech_archives
+---
 
 <html>
 
