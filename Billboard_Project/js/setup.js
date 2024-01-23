@@ -17,7 +17,7 @@ var map = L.map('map', {
   center: [39.9605, -75.13374],
   zoomControl:false,
   scrollWheelZoom: false,
-  zoom: 14
+  zoom: 11
 });
 
 var Stamen_TonerLite = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}.png', {
