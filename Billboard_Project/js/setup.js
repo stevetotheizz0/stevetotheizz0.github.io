@@ -17,14 +17,15 @@ var map = L.map('map', {
   center: [39.9605, -75.13374],
   zoomControl:false,
   scrollWheelZoom: false,
-  zoom: 12
+  zoom: 14
 });
 
 var Stamen_TonerLite = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}.png', {
   attribution: 'Map tiles by <a href="https://stamen.com">Stamen Design</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  zoom: 10,
+  subdomains: 'abcd',
   minZoom: 0,
-  maxZoom: 20
+  minZoom: 0,
+  maxZoom: 24
 }).addTo(map);
 
 var rawBillboard;
